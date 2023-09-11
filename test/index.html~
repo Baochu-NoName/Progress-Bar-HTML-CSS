@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+       <title>Vue Test</title>
+       <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+       <link src="./style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <div v-bind:class="titleClass"></div>
+        </div>
+   <script src="script.js" setup></script>
+    </body>
+</html>
+

@@ -1,0 +1,83 @@
+/* Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #413430;
+}
+/* Straight Progress Bar */
+#myProgress {
+    top: 100px;
+    width: 100%;
+    background-color: lightgrey;
+    border-radius: 16px;
+}
+
+#myBar {
+    width: 5%;
+    height: 15px;
+    background-color: red;
+    text-align: center;
+    line-height: 15px;
+    color: white;
+    border-radius: 16px;
+}
+
+/* Circular Progress Bar */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 50px 0;
+    border-radius: 8px;
+    background: #fff;
+    align-items: center;
+    row-gap: 30px;
+}
+.circular-progress {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#FF2D05 3.6deg, #bcbcbc 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FF2D05;
+}
+
+.text {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FF2D05;
+    text-align: center;
+}
